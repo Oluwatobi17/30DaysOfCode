@@ -1,0 +1,120 @@
+:root{
+	--primary: #fc7613;
+	--secondary: #262f38;
+}
+body{
+	background: #141519;
+	font-family: arial;
+	display: flex;
+	justify-content: center;
+}
+.hide{
+	display: none;
+}
+.container{
+	flex-basis: 320px;
+	flex-shrink: 0;
+	border-radius: 15px;
+	background: #212832;
+	padding: 25px;
+	margin: 8% auto;
+}
+.container .fa{
+	color: var(--primary);
+	background: var(--secondary);
+	padding: 10px;
+	border-radius: 50%;
+}
+.container h2{
+	color: white;
+}
+.container p{
+	color: rgba(255,255,255,0.4);
+	font-weight: 400;
+	font-weight: 0.9em;
+	line-height: 1.4em;
+}
+.rates{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.rate-value{
+	background: var(--secondary);
+	padding: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	cursor: pointer;
+	border-radius: 50%;
+	color: rgba(255,255,255,0.4);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	transition: all 200ms;
+}
+.rates .rate-value:hover{
+	background: var(--primary);
+}
+.active-rate{
+	background: #ccc;
+}
+.no-rate{
+	background: var(--secondary);
+}
+.container button{
+	background: var(--primary);
+	width: 100%;
+	text-align: center;
+	color: white;
+	border-radius: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid transparent;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all 200ms;
+}
+.container button:hover{
+	opacity: 0.8;
+	background: white;
+	color: var(--primary);
+}
+.message{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.message img{
+	margin-bottom: 20px;
+}
+.message .rate{
+	background: var(--secondary);
+	padding: 5px 15px;
+	border-radius: 20px;
+	color: var(--primary);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+.message p{
+	font-size: 0.9em;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.message img{
+	width: 30%;
+}
+footer{
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
+}
+
+
+
+@media screen and (max-width: 450px){
+	.container{
+		flex-basis: 80%;
+		margin-top: 30%;
+	}
+}

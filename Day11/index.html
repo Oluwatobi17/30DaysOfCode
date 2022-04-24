@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Rating Component</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="rate-form">
+			<i class="fa fa-star" aria-hidden="true"></i>
+
+			<h2>How did we do?</h2>
+
+			<p>Please let us know how we did with your support request. All feedback is appreciated to help
+			us improve our offering!</p>
+
+			<div class="rates">
+				<div id="1" class="rate-value">1</div>
+				<div id="2" class="rate-value">2</div>
+				<div id="3" class="rate-value">3</div>
+				<div id="4" class="rate-value">4</div>
+				<div id="5" class="rate-value">5</div>
+			</div>
+
+			<button>SUBMIT</button>
+		</div>
+
+		<div class="success hide">
+			<div class="message">
+				<img src="review.svg">
+
+				<div class="rate">You selected <span class="userrate">4</span> out of 5</div>
+
+				<h2>Thank you!</h2>
+
+				<p>We appreciate you taking the time to give a rating. If you ever need more support, 
+				don't hesitate to get in touch!</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- <footer>
+		© Ganiu Ibrahim Olalekan 2022
+	</footer> -->
+	<!-- Scripts --> 
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
